@@ -1,13 +1,12 @@
 #productos-container{
     display: grid;
     grid-template-areas: 
-    "navegacion navegacion navegacion"
     "quienes-somos quienes-somos quienes-somos"
     "articulo articulo articulo"
     "articulo articulo articulo"
     ;
     grid-template-columns: repeat(3,250px);
-    grid-template-rows: 50px 100px 250px 250px;
+    grid-template-rows: 100px 250px 250px;
     justify-items: center;
     align-items: center;
     justify-content: center;
@@ -118,8 +117,8 @@ textarea{
     }
 }
 
-@mixin sizesRows($sizeRow1, $sizeRow2, $sizeRow3, $sizeRow4, $sizeRow5, $sizeRow6){
-    grid-template-rows: $sizeRow1, $sizeRow2, $sizeRow3, $sizeRow4, $sizeRow5, $sizeRow6;
+@mixin sizesRows($sizeRow1, $sizeRow2, $sizeRow3, $sizeRow4, $sizeRow5){
+    grid-template-rows: $sizeRow1, $sizeRow2, $sizeRow3, $sizeRow4, $sizeRow5;
 }
 
 @media screen and (max-width: 576px) { 
@@ -136,7 +135,7 @@ textarea{
         "articulo"
         ;
         grid-template-columns: repeat(1,250px);
-        @include sizesRows(50px,150px,250px,250px,250px,250px);
+        @include sizesRows(150px,250px,250px,250px,250px);
     }
 }
 
@@ -152,7 +151,7 @@ textarea{
         "articulo articulo"
         ;
         grid-template-columns: repeat(2,250px);
-        @include sizesRows(50px,100px,250px,250px,250px,0);
+        @include sizesRows(100px,250px,250px,250px,0);
     }
 }
 
@@ -171,7 +170,7 @@ textarea{
         "articulo articulo"
         "articulo articulo"
         ;
-        @include sizesRows(50px, 100px,250px, 250px, 250px,0);
+        @include sizesRows(100px,250px, 250px, 250px,0);
     }
  }
 
@@ -186,7 +185,7 @@ textarea{
         "articulo articulo articulo"
         ;
         grid-template-columns: repeat(3,250px);
-        @include sizesRows(50px, 100px, 250px, 250px,0,0);
+        @include sizesRows(100px, 250px, 250px,0,0);
     }
  }
 
@@ -195,14 +194,20 @@ textarea{
 
     #productos-container{
         grid-template-areas: 
-        "navegacion navegacion navegacion"
         "quienes-somos quienes-somos quienes-somos"
         "articulo articulo articulo"
         "articulo articulo articulo"
         ;
-        @include sizesRows(50px, 100px, 250px, 250px,0,0);
+        @include sizesRows(100px, 250px, 250px,0,0);
     }
  }
+
+.SelectedPage{
+    position: relative;
+    top: -4px;
+    font-size: 20px;
+    font-weight: 700;
+}
 
 #demo{
     z-index: 100;

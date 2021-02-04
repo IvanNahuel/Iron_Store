@@ -76,6 +76,8 @@ textarea{
     text-align: center;
 }
 
+
+
 #producto-1-info, #producto-2-info, #producto-3-info, #producto-4-info, #producto-5-info, #producto-6-info{
     width: 200px;
     height: 130px;
@@ -117,7 +119,7 @@ textarea{
 }
 
 @mixin sizesRows($sizeRow1, $sizeRow2, $sizeRow3, $sizeRow4, $sizeRow5, $sizeRow6){
-    grid-template-rows: $sizeRow;
+    grid-template-rows: $sizeRow1, $sizeRow2, $sizeRow3, $sizeRow4, $sizeRow5, $sizeRow6;
 }
 
 @media screen and (max-width: 576px) { 
@@ -150,7 +152,7 @@ textarea{
         "articulo articulo"
         ;
         grid-template-columns: repeat(2,250px);
-        @include sizesRows(50px,100px,250px,250px,250px);
+        @include sizesRows(50px,100px,250px,250px,250px,0);
     }
 }
 
@@ -169,7 +171,7 @@ textarea{
         "articulo articulo"
         "articulo articulo"
         ;
-        @include sizesRows(50px, 100px,250px, 250px, 250px);
+        @include sizesRows(50px, 100px,250px, 250px, 250px,0);
     }
  }
 
@@ -184,7 +186,7 @@ textarea{
         "articulo articulo articulo"
         ;
         grid-template-columns: repeat(3,250px);
-        @include sizesRows(50px, 100px, 250px, 250px);
+        @include sizesRows(50px, 100px, 250px, 250px,0,0);
     }
  }
 
@@ -198,6 +200,23 @@ textarea{
         "articulo articulo articulo"
         "articulo articulo articulo"
         ;
-        @include sizesRows(50px, 100px, 250px, 250px);
+        @include sizesRows(50px, 100px, 250px, 250px,0,0);
     }
  }
+
+#demo{
+    z-index: 100;
+}
+#demo-1{
+    z-index: 90;
+}
+#demo-2{
+    z-index: 80;
+}
+#demo-3{
+    z-index: 70;
+}
+#demo-4{
+    z-index: 60;
+}
+

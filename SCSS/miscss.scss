@@ -18,6 +18,19 @@
     justify-content: center;
 }
 
+#flex-nav{
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-column-gap: 10px;
+    width: 40%;
+    justify-content: center;
+    margin-left: 30%;
+}
+
+
+
 .articulo{
     background-color: blue;
     width: 200px;
@@ -48,6 +61,7 @@
     padding: 15px 20px;
     animation-name:aparecer ;
     animation-duration: 2s;
+    text-align: center;
 }
 
 #titulo-principal{
@@ -125,7 +139,6 @@ textarea{
 
     #productos-container{
         grid-template-areas: 
-        "navegacion"
         "quienes-somos"
         "articulo"
         "articulo"
@@ -144,7 +157,6 @@ textarea{
 
     #productos-container{
         grid-template-areas: 
-        "navegacion navegacion"
         "quienes-somos quienes-somos"
         "articulo articulo"
         "articulo articulo"
@@ -164,7 +176,6 @@ textarea{
  
     #productos-container{
         grid-template-areas: 
-        "navegacion navegacion"
         "quienes-somos quienes-somos"
         "articulo articulo"
         "articulo articulo"
@@ -179,7 +190,6 @@ textarea{
 
     #productos-container{
         grid-template-areas: 
-        "navegacion navegacion navegacion"
         "quienes-somos quienes-somos quienes-somos"
         "articulo articulo articulo"
         "articulo articulo articulo"
@@ -202,9 +212,25 @@ textarea{
     }
  }
 
+ .nav-label-nuestros-clientes{
+    position: relative;
+    top: -7px;
+    line-height: 20px;
+ }
+
+ .nav-label-quienes-somos{
+    position: relative;
+    top: -7px;
+    line-height: 20px;
+ }
+
+ .nav-label-nuestros-productos{
+    top: -8px;
+    line-height: 20px;
+}
+
 .SelectedPage{
     position: relative;
-    top: -4px;
     font-size: 20px;
     font-weight: 700;
 }

@@ -12,6 +12,16 @@
   flex-direction: row;
   justify-content: center; }
 
+#flex-nav {
+  display: grid;
+  grid-template-rows: 60px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-column-gap: 10px;
+  width: 40%;
+  justify-content: center;
+  margin-left: 30%; }
+
 .articulo {
   background-color: blue;
   width: 200px;
@@ -38,7 +48,8 @@
   color: white;
   padding: 15px 20px;
   animation-name: aparecer;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  text-align: center; }
 
 #titulo-principal {
   animation-name: aparecer;
@@ -96,14 +107,14 @@ textarea {
 
 @media screen and (max-width: 576px) {
   #productos-container {
-    grid-template-areas: "navegacion" "quienes-somos" "articulo" "articulo" "articulo" "articulo" "articulo" "articulo";
+    grid-template-areas: "quienes-somos" "articulo" "articulo" "articulo" "articulo" "articulo" "articulo";
     grid-template-columns: repeat(1, 250px);
     grid-template-rows: 150px, 250px, 250px, 250px, 250px; } }
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
   #productos-container {
-    grid-template-areas: "navegacion navegacion" "quienes-somos quienes-somos" "articulo articulo" "articulo articulo" "articulo articulo";
+    grid-template-areas: "quienes-somos quienes-somos" "articulo articulo" "articulo articulo" "articulo articulo";
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: 100px, 250px, 250px, 250px, 0; } }
 
@@ -112,13 +123,13 @@ textarea {
   body {
     overflow: scroll; }
   #productos-container {
-    grid-template-areas: "navegacion navegacion" "quienes-somos quienes-somos" "articulo articulo" "articulo articulo" "articulo articulo";
+    grid-template-areas: "quienes-somos quienes-somos" "articulo articulo" "articulo articulo" "articulo articulo";
     grid-template-rows: 100px, 250px, 250px, 250px, 0; } }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   #productos-container {
-    grid-template-areas: "navegacion navegacion navegacion" "quienes-somos quienes-somos quienes-somos" "articulo articulo articulo" "articulo articulo articulo";
+    grid-template-areas: "quienes-somos quienes-somos quienes-somos" "articulo articulo articulo" "articulo articulo articulo";
     grid-template-columns: repeat(3, 250px);
     grid-template-rows: 100px, 250px, 250px, 0, 0; } }
 
@@ -128,9 +139,22 @@ textarea {
     grid-template-areas: "quienes-somos quienes-somos quienes-somos" "articulo articulo articulo" "articulo articulo articulo";
     grid-template-rows: 100px, 250px, 250px, 0, 0; } }
 
+.nav-label-nuestros-clientes {
+  position: relative;
+  top: -7px;
+  line-height: 20px; }
+
+.nav-label-quienes-somos {
+  position: relative;
+  top: -7px;
+  line-height: 20px; }
+
+.nav-label-nuestros-productos {
+  top: -8px;
+  line-height: 20px; }
+
 .SelectedPage {
   position: relative;
-  top: -4px;
   font-size: 20px;
   font-weight: 700; }
 

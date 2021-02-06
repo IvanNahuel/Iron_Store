@@ -14,7 +14,7 @@
   top: 60px;
   width: 50%;
   height: 700px;
-  background-color: white;
+  background-color: #DBD7D7;
   z-index: -2;
   margin-left: 25%;
   border-radius: 10px; }
@@ -77,7 +77,7 @@ textarea {
   height: 100px; }
 
 #fondo-productos {
-  background-color: #c7c4c4; }
+  background-color: #757373; }
 
 #quienes-somos {
   grid-area: quienes-somos;
@@ -227,3 +227,16 @@ textarea {
 
 #demo-4 {
   z-index: 60; }
+
+.btn-ver-mas {
+  background-color: #363434;
+  width: 200px;
+  height: 70px;
+  margin-left: 58%;
+  position: relative;
+  top: 70px;
+  padding: 10px 70px;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: white;
+  font-weight: 700; }

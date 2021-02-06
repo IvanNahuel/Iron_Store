@@ -57,7 +57,7 @@ $(document).ready(function(){
     });
 
     $('#producto-4').mouseout(function(){
-        $('#producto-4-info').css({'opacity':'0','top':'70px'});
+        $('#producto-4-info').css({'opacity':'0','top':'70px','display':'none'});
         event.stopPropagation()
     });
 
@@ -84,8 +84,4 @@ $(document).ready(function(){
         $('#producto-6-info').css({'opacity':'0','top':'70px'});
         event.stopPropagation()
     });
-
-    //setear por defecto que al producto que hicimos click no deberia 
-    //aplicarle el z-index de -1
-
  });

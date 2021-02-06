@@ -20,6 +20,17 @@
   border-radius: 10px;
   border: 1px solid black; }
 
+.flex-quienes-somos {
+  display: grid;
+  width: 50%;
+  margin-left: 25%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 250px 250px;
+  grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t";
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #DBD7D7; }
+
 #flex {
   display: flex;
   flex-direction: row;
@@ -119,6 +130,11 @@ textarea {
     opacity: 1; } }
 
 @media screen and (max-width: 576px) {
+  .flex-quienes-somos {
+    width: 60%;
+    margin-left: 20%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "quienes-somos" "pflexqs" "imagen-qs" "pflexqs-t" "imagen-qs-t"; }
   #Contenedor-Productos {
     width: 60%;
     margin-left: 20%;
@@ -134,6 +150,11 @@ textarea {
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
+  .flex-quienes-somos {
+    width: 80%;
+    margin-left: 10%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "quienes-somos" "pflexqs" "imagen-qs" "pflexqs-t" "imagen-qs-t"; }
   #Contenedor-Productos {
     width: 80%;
     margin-left: 10%;
@@ -149,6 +170,13 @@ textarea {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+  .flex-quienes-somos {
+    width: 64%;
+    margin-left: 18%;
+    grid-template-rows: auto 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 250px 250px;
+    grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t"; }
   body {
     overflow: scroll; }
   #Contenedor-Productos {
@@ -161,6 +189,11 @@ textarea {
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+  .flex-quienes-somos {
+    width: 90%;
+    margin-left: 5%;
+    grid-template-rows: auto 250px 250px;
+    grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t"; }
   #Contenedor-Productos {
     width: 90%;
     margin-left: 5%;
@@ -172,6 +205,10 @@ textarea {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+  .flex-quienes-somos {
+    width: 70%;
+    margin-left: 15%;
+    grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t"; }
   #Contenedor-Productos {
     width: 70%;
     margin-left: 15%; }
@@ -180,6 +217,10 @@ textarea {
     grid-template-rows: 250px, 250px, 0, 0; } }
 
 @media screen and (min-width: 1500px) {
+  .flex-quienes-somos {
+    width: 50%;
+    margin-left: 25%;
+    grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t"; }
   #Contenedor-Productos {
     width: 50%;
     margin-left: 25%; }
@@ -251,14 +292,3 @@ textarea {
   align-self: center;
   grid-area: pflexqs-t;
   text-align: center; }
-
-.flex-quienes-somos {
-  display: grid;
-  width: 50%;
-  margin-left: 25%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 250px 250px;
-  grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t";
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #DBD7D7; }

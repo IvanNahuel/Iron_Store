@@ -9,6 +9,19 @@
     justify-items: center;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 60px;
+}
+
+#Contenedor-Productos{
+    position: absolute;
+    top: 60px;
+    width: 50%;
+    height: 700px;
+    background-color: white;
+    z-index: -2;
+    margin-left: 25%;
+    border-radius: 10px;
 }
 
 #flex{
@@ -136,6 +149,18 @@ textarea{
 
 @media screen and (max-width: 576px) { 
 
+    /*DEBUG BORRAR DESPUES*/
+    body{
+        background-color:blueviolet;
+    }
+
+
+    #Contenedor-Productos{
+        width: 60%;
+        margin-left: 20%;
+        height: 1600px;
+    }
+
     #productos-container{
         grid-template-areas: 
         "articulo"
@@ -152,6 +177,17 @@ textarea{
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) { 
+
+    /*DEBUG BORRAR DESPUES*/
+    body{
+        background-color: pink;
+    }
+
+    #Contenedor-Productos{
+        width: 80%;
+        margin-left: 10%;
+        height: 950px;
+    }
 
     #productos-container{
         grid-template-areas: 
@@ -170,6 +206,17 @@ textarea{
     body{
         overflow: scroll;
     }
+
+    /*DEBUG BORRAR DESPUES*/
+    body{
+        background-color: lightblue;
+    }
+
+    #Contenedor-Productos{
+        width: 64%;
+        margin-left: 18%;
+        height: 950px;
+    }
  
     #productos-container{
         grid-template-areas: 
@@ -184,6 +231,16 @@ textarea{
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) { 
 
+    /*DEBUG BORRAR DESPUES*/
+    body{
+        background-color: green;
+    }
+
+    #Contenedor-Productos{
+        width: 90%;
+        margin-left: 5%;
+    }
+
     #productos-container{
         grid-template-areas: 
         "articulo articulo articulo"
@@ -197,6 +254,16 @@ textarea{
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) { 
 
+    /*DEBUG BORRAR DESPUES*/
+    body{
+        background-color: red;
+    }
+
+    #Contenedor-Productos{
+        width: 70%;
+        margin-left: 15%;
+    }
+
     #productos-container{
         grid-template-areas: 
         "articulo articulo articulo"
@@ -204,6 +271,21 @@ textarea{
         ;
         @include sizesRows(250px, 250px,0,0);
     }
+ }
+
+ @media screen and (min-width: 1500px) { 
+
+    /*DEBUG BORRAR DESPUES*/
+    body{
+        background-color: black;
+    }
+
+    #Contenedor-Productos{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+
  }
 
  .nav-label-nuestros-clientes{

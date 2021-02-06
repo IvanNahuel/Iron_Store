@@ -1,8 +1,8 @@
 #productos-container {
   display: grid;
-  grid-template-areas: "quienes-somos quienes-somos quienes-somos" "articulo articulo articulo" "articulo articulo articulo";
+  grid-template-areas: "articulo articulo articulo" "articulo articulo articulo";
   grid-template-columns: repeat(3, 250px);
-  grid-template-rows: 100px 250px 250px;
+  grid-template-rows: 250px 250px;
   justify-items: center;
   align-items: center;
   justify-content: center; }
@@ -107,37 +107,37 @@ textarea {
 
 @media screen and (max-width: 576px) {
   #productos-container {
-    grid-template-areas: "quienes-somos" "articulo" "articulo" "articulo" "articulo" "articulo" "articulo";
+    grid-template-areas: "articulo" "articulo" "articulo" "articulo" "articulo" "articulo";
     grid-template-columns: repeat(1, 250px);
-    grid-template-rows: 150px, 250px, 250px, 250px, 250px; } }
+    grid-template-rows: 250px, 250px, 250px, 250px; } }
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
   #productos-container {
-    grid-template-areas: "quienes-somos quienes-somos" "articulo articulo" "articulo articulo" "articulo articulo";
+    grid-template-areas: "articulo articulo" "articulo articulo" "articulo articulo";
     grid-template-columns: repeat(2, 250px);
-    grid-template-rows: 100px, 250px, 250px, 250px, 0; } }
+    grid-template-rows: 250px, 250px, 250px, 0; } }
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   body {
     overflow: scroll; }
   #productos-container {
-    grid-template-areas: "quienes-somos quienes-somos" "articulo articulo" "articulo articulo" "articulo articulo";
-    grid-template-rows: 100px, 250px, 250px, 250px, 0; } }
+    grid-template-areas: "articulo articulo" "articulo articulo" "articulo articulo";
+    grid-template-rows: 250px, 250px, 250px, 0; } }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   #productos-container {
-    grid-template-areas: "quienes-somos quienes-somos quienes-somos" "articulo articulo articulo" "articulo articulo articulo";
+    grid-template-areas: "articulo articulo articulo" "articulo articulo articulo";
     grid-template-columns: repeat(3, 250px);
-    grid-template-rows: 100px, 250px, 250px, 0, 0; } }
+    grid-template-rows: 250px, 250px, 0, 0; } }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
   #productos-container {
-    grid-template-areas: "quienes-somos quienes-somos quienes-somos" "articulo articulo articulo" "articulo articulo articulo";
-    grid-template-rows: 100px, 250px, 250px, 0, 0; } }
+    grid-template-areas: "articulo articulo articulo" "articulo articulo articulo";
+    grid-template-rows: 250px, 250px, 0, 0; } }
 
 .nav-label-nuestros-clientes {
   position: relative;

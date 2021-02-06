@@ -41,8 +41,6 @@
     margin-left: 30%;
 }
 
-
-
 .articulo{
     background-color: blue;
     width: 200px;
@@ -169,6 +167,7 @@ textarea{
         "articulo"
         "articulo"
         "articulo"
+        "btn-ver-mas"
         ;
         grid-template-columns: repeat(1,250px);
         @include sizesRows(250px,250px,250px,250px);
@@ -194,6 +193,7 @@ textarea{
         "articulo articulo"
         "articulo articulo"
         "articulo articulo"
+        "none btn-ver-mas"
         ;
         grid-template-columns: repeat(2,250px);
         @include sizesRows(250px,250px,250px,0);
@@ -223,6 +223,7 @@ textarea{
         "articulo articulo"
         "articulo articulo"
         "articulo articulo"
+        "none btn-ver-mas"
         ;
         @include sizesRows(250px, 250px, 250px,0);
     }
@@ -246,7 +247,7 @@ textarea{
         grid-template-areas: 
         "articulo articulo articulo"
         "articulo articulo articulo"
-        ;
+        "none none btn-ver-mas";
         grid-template-columns: repeat(3,250px);
         @include sizesRows(250px, 250px,0,0);
     }
@@ -269,6 +270,7 @@ textarea{
         grid-template-areas: 
         "articulo articulo articulo"
         "articulo articulo articulo"
+        "none none btn-ver-mas";
         ;
         @include sizesRows(250px, 250px,0,0);
     }
@@ -286,6 +288,13 @@ textarea{
         margin-left: 25%;
     }
 
+    #productos-container{
+        grid-template-areas: 
+        "articulo articulo articulo"
+        "articulo articulo articulo"
+        "none none btn-ver-mas";
+        ;
+    }
 
  }
 
@@ -331,14 +340,10 @@ textarea{
 
 .btn-ver-mas{
     background-color: #363434;
-    width: 200px;
-    height: 70px;
-    margin-left: 58%;
-    position: relative;
-    top: 70px;
     padding: 10px 70px;
     border: 2px solid black;
     border-radius: 25px;
     color: white;
     font-weight: 700;
+    grid-area: btn-ver-mas;
 }

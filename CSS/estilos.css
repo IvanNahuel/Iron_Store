@@ -126,7 +126,7 @@ textarea {
     margin-left: 20%;
     height: 1600px; }
   #productos-container {
-    grid-template-areas: "articulo" "articulo" "articulo" "articulo" "articulo" "articulo";
+    grid-template-areas: "articulo" "articulo" "articulo" "articulo" "articulo" "articulo" "btn-ver-mas";
     grid-template-columns: repeat(1, 250px);
     grid-template-rows: 250px, 250px, 250px, 250px; } }
 
@@ -140,7 +140,7 @@ textarea {
     margin-left: 10%;
     height: 950px; }
   #productos-container {
-    grid-template-areas: "articulo articulo" "articulo articulo" "articulo articulo";
+    grid-template-areas: "articulo articulo" "articulo articulo" "articulo articulo" "none btn-ver-mas";
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: 250px, 250px, 250px, 0; } }
 
@@ -156,7 +156,7 @@ textarea {
     margin-left: 18%;
     height: 950px; }
   #productos-container {
-    grid-template-areas: "articulo articulo" "articulo articulo" "articulo articulo";
+    grid-template-areas: "articulo articulo" "articulo articulo" "articulo articulo" "none btn-ver-mas";
     grid-template-rows: 250px, 250px, 250px, 0; } }
 
 /* Large devices (desktops, 992px and up) */
@@ -169,7 +169,7 @@ textarea {
     margin-left: 5%;
     height: 700px; }
   #productos-container {
-    grid-template-areas: "articulo articulo articulo" "articulo articulo articulo";
+    grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "none none btn-ver-mas";
     grid-template-columns: repeat(3, 250px);
     grid-template-rows: 250px, 250px, 0, 0; } }
 
@@ -182,7 +182,7 @@ textarea {
     width: 70%;
     margin-left: 15%; }
   #productos-container {
-    grid-template-areas: "articulo articulo articulo" "articulo articulo articulo";
+    grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "none none btn-ver-mas";
     grid-template-rows: 250px, 250px, 0, 0; } }
 
 @media screen and (min-width: 1500px) {
@@ -191,7 +191,9 @@ textarea {
     background-color: black; }
   #Contenedor-Productos {
     width: 50%;
-    margin-left: 25%; } }
+    margin-left: 25%; }
+  #productos-container {
+    grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "none none btn-ver-mas"; } }
 
 .nav-label-nuestros-clientes {
   position: relative;
@@ -230,13 +232,9 @@ textarea {
 
 .btn-ver-mas {
   background-color: #363434;
-  width: 200px;
-  height: 70px;
-  margin-left: 58%;
-  position: relative;
-  top: 70px;
   padding: 10px 70px;
   border: 2px solid black;
   border-radius: 25px;
   color: white;
-  font-weight: 700; }
+  font-weight: 700;
+  grid-area: btn-ver-mas; }

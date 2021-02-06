@@ -49,13 +49,27 @@
     border: 1px solid black;
     border-radius: 5px;
     background-color: #DBD7D7;
+    align-items: center;
 
     img{
         width: 100% !important;
         height: 50px;
         min-height: 120px!important;
     }
+}
 
+.grid-container-contacto{
+    display: grid;
+    width: 50%;
+    margin-left: 25%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+
+    img{
+        width: 80px;
+        height: 80px;
+    }
 }
 
 #flex{
@@ -132,8 +146,6 @@ textarea{
     grid-area: quienes-somos;
     text-align: center;
 }
-
-
 
 #producto-1-info, #producto-2-info, #producto-3-info, #producto-4-info, #producto-5-info, #producto-6-info{
     width: 200px;
@@ -448,6 +460,11 @@ textarea{
     text-align: center;
 }
 
+.parrafo-principal-contacto{
+    text-align: center;
+    color: white;
+    
+}
 
 
 

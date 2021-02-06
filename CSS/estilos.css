@@ -39,11 +39,23 @@
   justify-items: center;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: #DBD7D7; }
+  background-color: #DBD7D7;
+  align-items: center; }
   .grid-container-nuestros-clientes img {
     width: 100% !important;
     height: 50px;
     min-height: 120px !important; }
+
+.grid-container-contacto {
+  display: grid;
+  width: 50%;
+  margin-left: 25%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center; }
+  .grid-container-contacto img {
+    width: 80px;
+    height: 80px; }
 
 #flex {
   display: flex;
@@ -306,3 +318,7 @@ textarea {
   align-self: center;
   grid-area: pflexqs-t;
   text-align: center; }
+
+.parrafo-principal-contacto {
+  text-align: center;
+  color: white; }

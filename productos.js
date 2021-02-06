@@ -57,7 +57,7 @@ $(document).ready(function(){
     });
 
     $('#producto-4').mouseout(function(){
-        $('#producto-4-info').css({'opacity':'0','top':'70px','display':'none'});
+        $('#producto-4-info').css({'opacity':'0','top':'70px'});
         event.stopPropagation()
     });
 

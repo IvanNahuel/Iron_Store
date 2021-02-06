@@ -22,6 +22,7 @@
     z-index: -2;
     margin-left: 25%;
     border-radius: 10px;
+    border: 1px solid black;
 }
 
 #flex{
@@ -327,3 +328,46 @@ textarea{
     font-weight: 700;
     grid-area: btn-ver-mas;
 }
+
+.flex-imagen-QS{
+    grid-area: imagen-qs;
+    align-self: center;
+    justify-self: center;
+}
+
+.parrafo-flex-QS{
+    margin: 5px;
+    align-self: center;
+    grid-area: pflexqs;
+    text-align: center;
+}
+
+.flex-imagen-QS-2{
+    grid-area: imagen-qs-t;
+    align-self: center;
+    justify-self: center;
+}
+
+.parrafo-flex-QS-2{
+    margin: 5px;
+    align-self: center;
+    grid-area: pflexqs-t;
+    text-align: center;
+}
+
+.flex-quienes-somos{
+    display: grid;
+    width: 50%;
+    margin-left: 25%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 250px 250px;
+    grid-template-areas:
+        "quienes-somos quienes-somos"
+        "pflexqs imagen-qs"
+        "pflexqs-t imagen-qs-t";
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #DBD7D7;
+}
+
+

@@ -8,22 +8,231 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/estilos.css" />
     <script type="text/javascript" src="./jquery/jquery.js"> </script>
-
-
 </head>
-<body>
-    
+<body id="fondo-productos">
     <div>  
         <nav id=barra-navegacion>
-            <section id="flex-nav">
-              <a class="SelectedPage">Home</a>
-              <a href="./Contacto.html">Contacto</a>
-              <a class="nav-label-quienes-somos" href="./quienesSomos.html">Quienes somos</a>
-              <a class="nav-label-nuestros-productos" href="./tablaProductos.html">Nuestros productos</a>
-              <a class="nav-label-nuestros-clientes" href="./Clientes.html">Nuestros clientes</a>        
-            </section>
-          </nav> 
+          <section id="flex-nav">
+            <a class="SelectedPage">Home</a>
+            <a href="./Contacto.html">Contacto</a>
+            <a class="nav-label-quienes-somos" href="./quienesSomos.html">Quienes somos</a>
+            <a class="nav-label-nuestros-productos" href="./tablaProductos.html">Nuestros productos</a>
+            <a class="nav-label-nuestros-clientes" href="./Clientes.html">Nuestros clientes</a>        
+          </section>
+        </nav> 
     </div>
+    <!--Quienes Somos-->
+
+    <div class="flex-quienes-somos">
+      <div id=quienes-somos><strong>¿Quienes Somos? </strong> somos una tienda de venta de muebles industriales hechos a medida, tambien puedes
+        combinar con cualquier tipo de madera a eleccion.
+      </div> 
+      <br>
+      <div class="flex-imagen-QS">
+        <img src="./img/Mesa ratona nido.jpeg" alt="">
+      </div>
+      <div class="parrafo-flex-QS">
+        <p>
+          creemos que cada cliente es un mundo distinto, y nuestra trayectoria a lo largo de los años nos dio la razon
+          es por eso que cada cliente lo tratamos como unico, por que en si, nuestros productos son unicos para cada uno de ellos 
+          como si le pidieras la receta de tu torta favorita a tu abuela y ella te lo cocina. 
+        </p>
+      </div>    
+      <div class="parrafo-flex-QS-2">
+        <p>
+          al igual que el cliente elige el material de que va a ser fabricado su mueble, nosotros elegimos el material adecuado 
+          y nos aseguramos la mayor calidad posible en el.
+        </p>
+      </div>
+      <div class="flex-imagen-QS-2">
+        <img src="./img/mesa ratona de madera-exterior-2.jpeg" alt="">
+      </div>
+    </div>
+
+    <br>
+    <!--Nuestros Productos-->
+
+    <div id="Contenedor-Productos" style="position: relative;">
+      <div id="productos-container">  
+        <div id="producto-1" class="articulo">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul> 
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    
+                    <img src="./img/mesa ratona de madera-exterior-2.jpeg" alt="mesa-ratona" width="auto" height="auto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/mesa ratona de madera-exterior-4.jpeg" alt="mesa-ratona" width="auto" height="auto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/mesa ratona de madera-exterior-5.jpeg" alt="mesa-ratona" width="auto" height="auto">
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <div id="producto-1-info">
+                <strong>Mesa ratona</strong>
+                <br>
+                mesa ratona de exteriores, estructura de fundicion y tapa de madera.
+            </div>
+        </div>
+        <div id="producto-2" class="articulo">
+            <div id="demo-1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo-1" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo-1" data-slide-to="1"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/mesa ratona de hierro.jpeg" alt="mesa-ratona" width="auto" height="auto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/mesa ratona de hierro-2.jpeg" alt="mesa-ratona" width="auto" height="auto">
+                  </div>
+                </div>                    
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo-1" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo-1" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div id="producto-2-info">
+                <strong>Mesa ratona</strong>
+                <br>
+                mesa ratona de hierro y tapa de enchapado.
+            </div>
+        </div>
+
+        <div id="producto-3" class="articulo">
+            <div id="demo-2" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo-2" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo-2" data-slide-to="1"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">            
+                    <img src="./img/Mesa ratona nido.jpeg" alt="mesa-ratona-nido" width="auto" height="auto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/Mesa ratona nido-2.jpeg" alt="mesa-ratona-nido" width="auto" height="auto">
+                  </div>
+                </div>                    
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo-2" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo-2" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div id="producto-3-info">
+                <strong>Mesa ratona nido</strong>
+                <br>
+                Mesa ratona de hierro y tapa de enchapado con nido.
+            </div>
+        </div>
+
+        <div id="producto-4" class="articulo">
+            <div id="demo-3" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo-3" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo-3" data-slide-to="1"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    
+                    <img src="./img/desallunador de exteriores.jpeg" alt="desallunador-exterior" width="auto" height="auto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/desallunador de exteriores-2.jpeg" alt="desallunador-exterior" width="auto" height="auto">
+                  </div>
+                </div>                    
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo-3" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo-3" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div id="producto-4-info">
+                <strong>desallunador</strong>
+                <br>
+                desallunador para exteriores de fundicion y tapa de madera.
+            </div>
+        </div>
+
+        <div id="producto-5" class="articulo">
+            <div id="demo-4" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo-4" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo-4" data-slide-to="1"></li>
+                  <li data-target="#demo-4" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/biblioteca.jpeg" alt="Los Angeles" width="biblioteca" height="auto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/biblioteca-2.jpeg" alt="Chicago" width="biblioteca" height="auto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/biblioteca-3.jpeg" alt="Chicago" width="biblioteca" height="auto">
+                  </div>
+                </div>                    
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo-4" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo-4" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div id="producto-5-info">
+                <strong>biblioteca</strong>
+                <br>
+                biblioteca de fundicion y madera, doble puerta.
+            </div>
+        </div>
+        <div id="producto-6" class="articulo">
+            <img src="./img/meta ratona de madera.jpeg" alt="mesa ratona de madera" width="auto" height="auto">
+            <div id="producto-6-info">
+                <strong>Mesa ratona</strong>
+                <br>
+                mesa ratona interior de fundicion y tapa de madera.
+            </div>
+        </div>
+        <a class="btn-ver-mas" href="https://listado.mercadolibre.com.ar/muebles-de-hierro#D[A:muebles%20de%20hierro]" target="_blank">Ver mas</a>
+      </div>
+    </div>
+
+
+    <!--Nuestros Clientes-->
+    <!--Contacto-->
 
    
 </body>

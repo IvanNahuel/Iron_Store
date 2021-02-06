@@ -166,7 +166,8 @@ textarea {
     background-color: green; }
   #Contenedor-Productos {
     width: 90%;
-    margin-left: 5%; }
+    margin-left: 5%;
+    height: 700px; }
   #productos-container {
     grid-template-areas: "articulo articulo articulo" "articulo articulo articulo";
     grid-template-columns: repeat(3, 250px);

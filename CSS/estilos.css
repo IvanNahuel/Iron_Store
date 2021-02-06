@@ -20,7 +20,7 @@
   border-radius: 10px;
   border: 1px solid black; }
 
-.flex-quienes-somos {
+.grid-quienes-somos {
   display: grid;
   width: 50%;
   margin-left: 25%;
@@ -30,6 +30,20 @@
   border: 1px solid black;
   border-radius: 5px;
   background-color: #DBD7D7; }
+
+.grid-container-nuestros-clientes {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px;
+  justify-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #DBD7D7; }
+  .grid-container-nuestros-clientes img {
+    width: 100% !important;
+    height: 50px;
+    min-height: 120px !important; }
 
 #flex {
   display: flex;
@@ -130,7 +144,7 @@ textarea {
     opacity: 1; } }
 
 @media screen and (max-width: 576px) {
-  .flex-quienes-somos {
+  .grid-quienes-somos {
     width: 60%;
     margin-left: 20%;
     grid-template-columns: 1fr;
@@ -150,7 +164,7 @@ textarea {
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
-  .flex-quienes-somos {
+  .grid-quienes-somos {
     width: 80%;
     margin-left: 10%;
     grid-template-columns: 1fr;
@@ -170,7 +184,7 @@ textarea {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  .flex-quienes-somos {
+  .grid-quienes-somos {
     width: 64%;
     margin-left: 18%;
     grid-template-rows: auto 300px 300px;
@@ -189,7 +203,7 @@ textarea {
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  .flex-quienes-somos {
+  .grid-quienes-somos {
     width: 90%;
     margin-left: 5%;
     grid-template-rows: auto 250px 250px;
@@ -205,7 +219,7 @@ textarea {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  .flex-quienes-somos {
+  .grid-quienes-somos {
     width: 70%;
     margin-left: 15%;
     grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t"; }
@@ -217,7 +231,7 @@ textarea {
     grid-template-rows: 250px, 250px, 0, 0; } }
 
 @media screen and (min-width: 1500px) {
-  .flex-quienes-somos {
+  .grid-quienes-somos {
     width: 50%;
     margin-left: 25%;
     grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t"; }

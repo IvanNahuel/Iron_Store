@@ -30,6 +30,13 @@
   border: 1px solid black;
   border-radius: 5px;
   background-color: #DBD7D7; }
+  .grid-quienes-somos img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px; }
 
 .grid-container-nuestros-clientes {
   display: grid;
@@ -141,7 +148,7 @@ textarea {
   min-width: 200px;
   min-height: 200px; }
 
-#producto-6, img {
+#producto-6 img {
   width: 100%;
   height: 100%;
   max-width: 200px;
@@ -321,4 +328,5 @@ textarea {
 
 .parrafo-principal-contacto {
   text-align: center;
-  color: white; }
+  color: white;
+  margin: 30px 150px; }

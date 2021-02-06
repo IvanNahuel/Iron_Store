@@ -147,16 +147,16 @@ textarea{
 
 @media screen and (max-width: 576px) { 
 
-    /*DEBUG BORRAR DESPUES*/
-    body{
-        background-color:blueviolet;
-    }
-
-
     #Contenedor-Productos{
         width: 60%;
         margin-left: 20%;
         height: 1600px;
+        top:320px
+    }
+
+    #flex-nav{
+        grid-template-rows: 60px 60px 60px 60px 60px;
+        grid-template-columns: 1fr;
     }
 
     #productos-container{
@@ -177,15 +177,16 @@ textarea{
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) { 
 
-    /*DEBUG BORRAR DESPUES*/
-    body{
-        background-color: pink;
-    }
-
     #Contenedor-Productos{
         width: 80%;
         margin-left: 10%;
         height: 950px;
+        top: 60px;
+    }
+
+    #flex-nav{
+        grid-template-rows: 60px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     #productos-container{
@@ -205,11 +206,6 @@ textarea{
 
     body{
         overflow: scroll;
-    }
-
-    /*DEBUG BORRAR DESPUES*/
-    body{
-        background-color: lightblue;
     }
 
     #Contenedor-Productos{
@@ -232,11 +228,6 @@ textarea{
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) { 
 
-    /*DEBUG BORRAR DESPUES*/
-    body{
-        background-color: green;
-    }
-
     #Contenedor-Productos{
         width: 90%;
         margin-left: 5%;
@@ -256,11 +247,6 @@ textarea{
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) { 
 
-    /*DEBUG BORRAR DESPUES*/
-    body{
-        background-color: red;
-    }
-
     #Contenedor-Productos{
         width: 70%;
         margin-left: 15%;
@@ -278,11 +264,6 @@ textarea{
 
  @media screen and (min-width: 1500px) { 
 
-    /*DEBUG BORRAR DESPUES*/
-    body{
-        background-color: black;
-    }
-
     #Contenedor-Productos{
         width: 50%;
         margin-left: 25%;
@@ -295,7 +276,6 @@ textarea{
         "none none btn-ver-mas";
         ;
     }
-
  }
 
  .nav-label-nuestros-clientes{

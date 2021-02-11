@@ -199,6 +199,13 @@ textarea {
     margin-left: 20%;
     height: 1600px;
     top: 320px; }
+  #Contenedor-Contactos {
+    width: 60%;
+    margin-left: 20%;
+    top: 350px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 600px; }
   #flex-nav {
     grid-template-rows: 60px 60px 60px 60px 60px;
     grid-template-columns: 1fr; }
@@ -219,6 +226,10 @@ textarea {
     margin-left: 10%;
     height: 950px;
     top: 60px; }
+  #Contenedor-Contactos {
+    width: 80%;
+    margin-left: 10%;
+    height: 200px; }
   #flex-nav {
     grid-template-rows: 60px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
@@ -242,6 +253,10 @@ textarea {
     width: 64%;
     margin-left: 18%;
     height: 950px; }
+  #Contenedor-Contactos {
+    width: 64%;
+    margin-left: 18%;
+    height: 200px; }
   #productos-container {
     grid-template-areas: "articulo articulo" "articulo articulo" "articulo articulo" "none btn-ver-mas";
     grid-template-rows: 250px, 250px, 250px, 0; } }
@@ -257,6 +272,10 @@ textarea {
     width: 90%;
     margin-left: 5%;
     height: 700px; }
+  #Contenedor-Contactos {
+    width: 90%;
+    margin-left: 5%;
+    height: 200px; }
   #productos-container {
     grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "none none btn-ver-mas";
     grid-template-columns: repeat(3, 250px);
@@ -271,6 +290,10 @@ textarea {
   #Contenedor-Productos {
     width: 70%;
     margin-left: 15%; }
+  #Contenedor-Contactos {
+    width: 70%;
+    margin-left: 15%;
+    height: 200px; }
   #productos-container {
     grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "none none btn-ver-mas";
     grid-template-rows: 250px, 250px, 0, 0; } }
@@ -283,6 +306,10 @@ textarea {
   #Contenedor-Productos {
     width: 50%;
     margin-left: 25%; }
+  #Contenedor-Contactos {
+    width: 50%;
+    margin-left: 25%;
+    height: 200px; }
   #productos-container {
     grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "none none btn-ver-mas"; } }
 

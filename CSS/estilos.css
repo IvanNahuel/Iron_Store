@@ -27,7 +27,8 @@
   display: grid;
   margin-left: 25%;
   width: 50%;
-  border-radius: 10px; }
+  border-radius: 10px;
+  background-color: #DBD7D7; }
 
 #Contenedor-Contactos {
   position: relative;
@@ -200,7 +201,6 @@ textarea {
 
 .parrafo-principal-contacto {
   text-align: center;
-  color: white;
   margin: 30px 150px; }
 
 @media screen and (max-width: 576px) {

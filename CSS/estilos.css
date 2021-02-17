@@ -55,7 +55,8 @@
   grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t";
   border: 1px solid black;
   border-radius: 5px;
-  background-color: #DBD7D7; }
+  background-color: #DBD7D7;
+  grid-row-gap: 20px; }
   .grid-quienes-somos img {
     width: 100%;
     height: 100%;

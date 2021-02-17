@@ -20,6 +20,15 @@
   border-radius: 10px;
   border: 1px solid black; }
 
+#contenedor-contactos-grid {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: grid;
+  margin-left: 25%;
+  width: 50%;
+  border-radius: 10px; }
+
 #Contenedor-Contactos {
   position: relative;
   top: 60px;
@@ -43,8 +52,8 @@
     justify-content: center;
     align-items: center; }
   #Contenedor-Contactos img {
-    width: 100px;
-    height: 100px; }
+    width: 60px;
+    height: 60px; }
 
 .grid-quienes-somos {
   display: grid;
@@ -189,6 +198,11 @@ textarea {
   100% {
     opacity: 1; } }
 
+.parrafo-principal-contacto {
+  text-align: center;
+  color: white;
+  margin: 30px 150px; }
+
 @media screen and (max-width: 576px) {
   .grid-quienes-somos {
     width: 60%;
@@ -200,6 +214,11 @@ textarea {
     margin-left: 20%;
     height: 1600px;
     top: 320px; }
+  .parrafo-principal-contacto {
+    margin: 30px 20px; }
+  #contenedor-contactos-grid {
+    width: 60%;
+    margin-left: 20%; }
   #Contenedor-Contactos {
     width: 60%;
     margin-left: 20%;
@@ -227,6 +246,9 @@ textarea {
     margin-left: 10%;
     height: 950px;
     top: 60px; }
+  #contenedor-contactos-grid {
+    width: 80%;
+    margin-left: 10%; }
   #Contenedor-Contactos {
     width: 80%;
     margin-left: 10%;
@@ -258,6 +280,9 @@ textarea {
     width: 64%;
     margin-left: 18%;
     height: 200px; }
+  #contenedor-contactos-grid {
+    width: 64%;
+    margin-left: 18%; }
   #productos-container {
     grid-template-areas: "articulo articulo" "articulo articulo" "articulo articulo" "none btn-ver-mas";
     grid-template-rows: 250px, 250px, 250px, 0; } }
@@ -277,6 +302,9 @@ textarea {
     width: 90%;
     margin-left: 5%;
     height: 200px; }
+  #contenedor-contactos-grid {
+    width: 90%;
+    margin-left: 5%; }
   #productos-container {
     grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "none none btn-ver-mas";
     grid-template-columns: repeat(3, 250px);
@@ -295,6 +323,9 @@ textarea {
     width: 70%;
     margin-left: 15%;
     height: 200px; }
+  #contenedor-contactos-grid {
+    width: 70%;
+    margin-left: 15%; }
   #productos-container {
     grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "none none btn-ver-mas";
     grid-template-rows: 250px, 250px, 0, 0; } }
@@ -305,6 +336,9 @@ textarea {
     margin-left: 25%;
     grid-template-areas: "quienes-somos quienes-somos" "pflexqs imagen-qs" "pflexqs-t imagen-qs-t"; }
   #Contenedor-Productos {
+    width: 50%;
+    margin-left: 25%; }
+  #contenedor-contactos-grid {
     width: 50%;
     margin-left: 25%; }
   #Contenedor-Contactos {
@@ -379,8 +413,3 @@ textarea {
   align-self: center;
   grid-area: pflexqs-t;
   text-align: center; }
-
-.parrafo-principal-contacto {
-  text-align: center;
-  color: white;
-  margin: 30px 150px; }

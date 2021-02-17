@@ -203,7 +203,7 @@ textarea {
   #Contenedor-Contactos {
     width: 60%;
     margin-left: 20%;
-    top: 350px;
+    top: 60px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 600px; }

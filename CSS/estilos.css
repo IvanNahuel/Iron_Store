@@ -82,8 +82,8 @@
 .grid-container-nuestros-clientes {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 250px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 250px;
   justify-items: center;
   border: 1px solid black;
   border-radius: 5px;
@@ -223,6 +223,10 @@ textarea {
   #contenedor-contactos-grid {
     width: 60%;
     margin-left: 20%; }
+  .grid-container-nuestros-clientes {
+    grid-template-rows: 150px 250px;
+    width: 60%;
+    margin-left: 20%; }
   #Contenedor-Contactos {
     width: 60%;
     margin-left: 20%;
@@ -251,6 +255,9 @@ textarea {
     height: 950px;
     top: 60px; }
   #contenedor-contactos-grid {
+    width: 80%;
+    margin-left: 10%; }
+  .grid-container-nuestros-clientes {
     width: 80%;
     margin-left: 10%; }
   #Contenedor-Contactos {
@@ -287,6 +294,9 @@ textarea {
   #contenedor-contactos-grid {
     width: 64%;
     margin-left: 18%; }
+  .grid-container-nuestros-clientes {
+    width: 64%;
+    margin-left: 18%; }
   #productos-container {
     grid-template-areas: "articulo articulo" "articulo articulo" "articulo articulo" "none btn-ver-mas";
     grid-template-rows: 250px, 250px, 250px, 0; } }
@@ -307,6 +317,9 @@ textarea {
     margin-left: 5%;
     height: 200px; }
   #contenedor-contactos-grid {
+    width: 90%;
+    margin-left: 5%; }
+  .grid-container-nuestros-clientes {
     width: 90%;
     margin-left: 5%; }
   #productos-container {
@@ -330,6 +343,9 @@ textarea {
   #contenedor-contactos-grid {
     width: 70%;
     margin-left: 15%; }
+  .grid-container-nuestros-clientes {
+    width: 70%;
+    margin-left: 15%; }
   #productos-container {
     grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "none none btn-ver-mas";
     grid-template-rows: 250px, 250px, 0, 0; } }
@@ -343,6 +359,9 @@ textarea {
     width: 50%;
     margin-left: 25%; }
   #contenedor-contactos-grid {
+    width: 50%;
+    margin-left: 25%; }
+  .grid-container-nuestros-clientes {
     width: 50%;
     margin-left: 25%; }
   #Contenedor-Contactos {

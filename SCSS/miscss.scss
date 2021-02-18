@@ -193,8 +193,8 @@
     align-self: start;
 
     svg{
+        top: -48px;
         left: 92%;
-        top: 15%;
         position: relative;
         cursor: pointer;
     }
@@ -289,6 +289,11 @@ textarea{
 
 @media screen and (max-width: 576px) { 
 
+    #email{
+        width: 100%;
+        right: 0;
+    } 
+
     .grid-quienes-somos {
         width: 60%;
         margin-left: 20%;
@@ -353,7 +358,13 @@ textarea{
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) { 
+@media screen and (min-width: 576px) {
+    
+    #email{
+        width: 100%;
+        right: 0;
+    } 
+
     .grid-quienes-somos {
         width: 80%;
         margin-left: 10%;
@@ -407,7 +418,13 @@ textarea{
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
+    
+    #email{
+        right: 17%;
+        width: 600px;
+    } 
+
     .grid-quienes-somos {
         width: 64%;
         margin-left: 18%;
@@ -458,7 +475,13 @@ textarea{
  }
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 992px) {
+    
+    #email{
+        right: 17%;
+        width: 600px;
+    } 
+
     .grid-quienes-somos {
         width: 90%;
         margin-left: 5%;
@@ -502,7 +525,13 @@ textarea{
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1200px) {
+
+    #email{
+        right: 23%;
+        width: 600px;
+    }  
+
     .grid-quienes-somos {
         width: 70%;
         margin-left: 15%;
@@ -544,6 +573,11 @@ textarea{
  }
 
  @media screen and (min-width: 1500px) { 
+
+    #email{
+        right: 34%;    
+        width: 600px;
+    }   
 
     .grid-quienes-somos {
         width: 50%;

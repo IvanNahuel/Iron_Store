@@ -8,33 +8,48 @@ function VerificarEstadoYSetearIndexNegativo (idProducto){
     }
 }
 
+function CerrarPopUp(){
+    $('#email').css({'height':'0'});
+    $('svg').css({'opacity':'0'});
+    $('#email #barra-navegacion').css({'opacity':'0'});
+    $('.form-group').css({'opacity':'0'});
+
+    setTimeout(function(){
+        $('#modal-shadow').css({'display':'none'});
+        $('body').css({'overflow':'scroll'}); 
+    }, 1500);
+}
+
+function AbrirPopUp(){
+    $('#modal-shadow').css({'display':'block'});
+    $('#email').css({'height':'500px'});
+    $('svg').css({'opacity':'1'});
+    $('#email #barra-navegacion').css({'opacity':'1'});
+    $('.form-group').css({'opacity':'1'});
+}
+
+function ScrollUpAndHiddenOverflow(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    $('body').css({'overflow':'hidden'}); 
+    return true; 
+}
+
 $(document).ready(function(){
 
     $('.cerrar').click(function(){
-        $('#email').css({'height':'0'});
-        $('svg').css({'opacity':'0'});
-        $('#email #barra-navegacion').css({'opacity':'0'});
-        $('.form-group').css({'opacity':'0'});
+        CerrarPopUp();
+    });
 
-        setTimeout(function(){
-            $('#modal-shadow').css({'display':'none'});
-            $('body').css({'overflow':'scroll'}); 
-        }, 1500);
-
+    $('.form-group button').click(function(){
+        CerrarPopUp();
     });
 
     $('.gmail-btn').click(function(){
-        $('#modal-shadow').css({'display':'block'});
-        $('#email').css({'height':'500px'});
-        $('svg').css({'opacity':'1'});
-        $('#email #barra-navegacion').css({'opacity':'1'});
-        $('.form-group').css({'opacity':'1'});
+        AbrirPopUp();
     });
 
     $('.btn-gmail-ref').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        $('body').css({'overflow':'hidden'}); 
-        return false; 
+        ScrollUpAndHiddenOverflow();
     });
     
     $('#producto-1 ,#producto-1-info').mouseover(function(el){

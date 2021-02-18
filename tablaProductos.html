@@ -25,7 +25,37 @@
       </section>
     </nav>
   </header> 
-  <main> 
+  <main>
+    <div id="modal-shadow" style="display: none;">
+      <div id="rolleable-component">
+        <div id="email">
+          <div id="barra-navegacion" style="height: 60px;">
+            <div class="text-center text-white">
+              <h1>¡Enviar Email!</h1>
+            </div>
+            <svg class="cerrar" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-x" viewBox="0 0 16 16">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="form-group">
+              <label class="mt-2 ml-2" for="email">Email</label>
+              <input class="form-control" type="Email" placeholder="Ingrese su email aqui" name="email">
+              <label class="mt-2 ml-2" for="Nombre">Nombre</label>
+              <input type="text" class="form-control" placeholder="Ingrese su Nombre" name="Nombre">
+              <label class="mt-2 ml-2" for="Apellido">Apellido</label>
+              <input type="text" class="form-control" placeholder="Ingrese su Apellido" name="Apellido">
+              <label class="mt-2 ml-2" for="Mensaje">Mensaje</label>
+              <textarea class="form-control" style="height: 75px;"></textarea>
+              <div class="text-center">
+                <button type="submit" class="m-2 btn btn-danger">Cerrar</button>
+                <button type="submit" class="m-2 btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
     <div id="Contenedor-Productos">
     </div>
     <div id="productos-container">  
@@ -201,17 +231,18 @@
   </main>
   <footer class="foot-tabla-productos">
     <div id="Contenedor-Contactos">
-      <a href="./Contacto.html">
-        <img src="./img/gmail.png" alt="">
+      <div>
+        <img class="gmail-btn btn-gmail-ref" src="./img/gmail.png" alt="">
+      </div>
+      <a href="https://web.whatsapp.com/" target="blank">
+        <img class="wassap-btn" href="https://web.whatsapp.com/" src="./img/wassap.png" alt="">
       </a>
-      <a href="./Contacto.html">
-        <img src="./img/wassap.png" alt="">
-      </a>
-      <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+      <a href="https://www.instagram.com/?hl=es-la" target="blank">
         <img src="./img/instagram.png" alt="">
-      </a>   
+      </a>  
     </div>
   </footer>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="./productos.js"></script>

@@ -46,6 +46,7 @@ $(document).ready(function(){
 
     $('.gmail-btn').click(function(){
         AbrirPopUp();
+        ScrollUpAndHiddenOverflow();
     });
 
     $('.btn-gmail-ref').click(function(){ 

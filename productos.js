@@ -9,9 +9,36 @@ function VerificarEstadoYSetearIndexNegativo (idProducto){
 }
 
 $(document).ready(function(){
+
+    $('.cerrar').click(function(){
+        $('#email').css({'height':'0'});
+        $('svg').css({'opacity':'0'});
+        $('#email #barra-navegacion').css({'opacity':'0'});
+        $('.form-group').css({'opacity':'0'});
+
+        setTimeout(function(){
+            $('#modal-shadow').css({'display':'none'});
+            $('body').css({'overflow':'scroll'}); 
+        }, 1500);
+
+    });
+
+    $('.gmail-btn').click(function(){
+        $('#modal-shadow').css({'display':'block'});
+        $('#email').css({'height':'500px'});
+        $('svg').css({'opacity':'1'});
+        $('#email #barra-navegacion').css({'opacity':'1'});
+        $('.form-group').css({'opacity':'1'});
+    });
+
+    $('.btn-gmail-ref').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        $('body').css({'overflow':'hidden'}); 
+        return false; 
+    });
+    
     $('#producto-1 ,#producto-1-info').mouseover(function(el){
         $('#producto-1-info').css({'opacity':'1','top':'200px','border-radius':'5px','z-index':'95'});
-        //$('#producto-1').css('z-index','15');
         VerificarEstadoYSetearIndexNegativo(el.currentTarget.id);
         event.stopPropagation();
 
@@ -24,7 +51,6 @@ $(document).ready(function(){
 
     $('#producto-2 ,#producto-2-info').mouseover(function(el){
         $('#producto-2-info').css({'opacity':'1','top':'200px','border-radius':'5px'});
-        //$('#producto-2').css('z-index','15');
         VerificarEstadoYSetearIndexNegativo(el.currentTarget.id);
         event.stopPropagation();
 
@@ -37,7 +63,6 @@ $(document).ready(function(){
 
     $('#producto-3 ,#producto-3-info').mouseover(function(el){
         $('#producto-3-info').css({'opacity':'1','top':'200px','border-radius':'5px'});
-        //$('#producto-3').css('z-index','15');
         VerificarEstadoYSetearIndexNegativo(el.currentTarget.id);
         event.stopPropagation();
 
@@ -50,7 +75,6 @@ $(document).ready(function(){
 
     $('#producto-4 ,#producto-4-info').mouseover(function(el){
         $('#producto-4-info').css({'opacity':'1','top':'200px','border-radius':'5px'});
-        //$('#producto-4').css('z-index','1');
         VerificarEstadoYSetearIndexNegativo(el.currentTarget.id);
         event.stopPropagation();
 
@@ -63,7 +87,6 @@ $(document).ready(function(){
 
     $('#producto-5 ,#producto-5-info').mouseover(function(el){
         $('#producto-5-info').css({'opacity':'1','top':'200px','border-radius':'5px'});
-        //$('#producto-5').css('z-index','1');
         VerificarEstadoYSetearIndexNegativo(el.currentTarget.id);
         event.stopPropagation();
     });
@@ -75,7 +98,6 @@ $(document).ready(function(){
 
     $('#producto-6 ,#producto-6-info').mouseover(function(el){
         $('#producto-6-info').css({'opacity':'1','top':'200px','border-radius':'5px'});
-        //$('#producto-6').css('z-index','1');
         VerificarEstadoYSetearIndexNegativo(el.currentTarget.id);
         event.stopPropagation();
     });
